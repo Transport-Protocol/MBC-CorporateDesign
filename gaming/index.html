@@ -26,6 +26,12 @@
         })
         $('#timer_default').backward_timer('start')
       })
+      
+      $('#timer_on_exhausted').backward_timer({
+        on_exhausted: function(timer) {
+        window.history.back()
+        }
+      })
     </script>
     <span id='timer_default' class='timer'>value placeholder</span>
 <!-- HEADER ================================================== -->
