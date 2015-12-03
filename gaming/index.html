@@ -19,6 +19,15 @@
   </head>
 
   <body>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#timer_custom_timeout').backward_timer({
+          seconds: 30
+        })
+        $('#timer_default').backward_timer('start')
+      })
+    </script>
+    <span id='timer_default' class='timer'>value placeholder</span>
 <!-- HEADER ================================================== -->
     <div class="page-header">
           <h1>Modern Browser Communication</h1>
