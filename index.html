@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,16 +13,18 @@
     <title>Modern Browser Communication</title>
 
     <!-- Bootstrap-CSS -->
-    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//getbootstrap.com/dist/css/bootstrap.min.css"/>
 
-    <link rel="stylesheet" href="http://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/main.css">
+    <link rel="stylesheet" href="main.css">
   </head>
 
   <body>
 <!-- HEADER ================================================== -->
     <div class="page-header">
+      <center>5 Teams - 1 Semester 
+      - Newbies without any clue what to do! <br/> The results of MBC (Wahlpflichtfach) WS15/16</center>
       <h1>Modern Browser Communication</h1>
-      <img class="img-responsive" alt="Logo" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/logoCaDSsmall.jpg">
+      <img class="img-responsive" alt="Logo" src="pictures/logoCaDSsmall.jpg">
     </div>
 
 <!-- NAVBAR ================================================== -->
@@ -35,21 +37,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">CaDS</a>
+          <a class="navbar-brand" href=".">CaDS</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href=".">Home</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="http://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/gaming/index.html">Gaming</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Info</a></li>
-                <li><a href="http://141.22.27.233:5900/">Lego Mindstorm</a></li>
+                <li><a href="gaming/">Gaming</a></li>
+                <li><a href="tools/">Tools</a></li>
+                <li><a href="info/">Info</a></li>
+                <!-- li><a href="http://141.22.27.233:5900/">Lego Mindstorm</a></li -->
               </ul>
             </li>
-            <li><a href="#ueber">About</a></li>
+            <!--li><a href="#">About</a></li-->
           </ul>
         </div>
       </div>
@@ -63,23 +65,35 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
       </ol>
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-        <!-- Slides 1 -->
+        <!-- Team 0 -->
         <div class="item active">
-          <img alt="Erste Folie" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/slide1.GIF">
+          <img alt="Team 0 - findVL" src="pictures/slideFindVL.gif">
           <div class="container">
             <div class="carousel-caption">
-              <h2>Anwendungsname</h2>
-              <p>Beschreibung bla bla bla.</p>
-              <p><a class="btn btn-lg btn-primary" href="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/gaming/app1/index.html" role="button">Try it...</a></p>
+              <h2>findVL</h2>
+              <p>Lost? Never again!</p>
+              <p><a class="btn btn-lg btn-primary" href="info/findvl/" role="button">Try it...</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- Slides 1 -->
+        <div class="item">
+          <img alt="Erste Folie" src="pictures/slide1.GIF">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Turtle Race</h2>
+              <p>Shake it....</p>
+              <p><a class="btn btn-lg btn-primary" href="http://141.22.27.231:11002/" role="button">Try it...</a></p>
             </div>
           </div>
         </div>
         <!-- Slides 2 -->
         <div class="item">
-          <img alt="Zweite Folie" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/slide2.GIF" >
+          <img alt="Zweite Folie" src="pictures/slide2.GIF" >
           <div class="container">
             <div class="carousel-caption">
               <h2>Noch eine Anwendung</h2>
@@ -90,7 +104,7 @@
         </div>
         <!-- Slides 3 -->
         <div class="item">
-          <img  alt="Dritte Folie" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/slide3.GIF">
+          <img  alt="Dritte Folie" src="pictures/slide3.GIF">
           <div class="container">
             <div class="carousel-caption">
               <h2>Aller guten Dinge sind drei</h2>
@@ -100,8 +114,8 @@
           </div>
         </div>
         <!-- Slides 4 -->
-        <div class="item">
-          <img  alt="Vierte Folie" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/slide4.GIF">
+        <!--div class="item">
+          <img  alt="Vierte Folie" src="pictures/slide4.GIF">
           <div class="container">
             <div class="carousel-caption">
               <h2>Lego Gripper</h2>
@@ -109,16 +123,16 @@
               <p><a class="btn btn-lg btn-primary" href="http://141.22.27.233:5900/" role="button">Try it...</a></p>
             </div>
           </div>
-        </div>
+        </div -->
       </div>
       <!-- Controls -->
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Zurück</span>
+        <span class="sr-only">Back</span>
       </a>
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Weiter</span>
+        <span class="sr-only">Next</span>
       </a>
     </div><!-- /.carousel -->
 
@@ -127,30 +141,31 @@
       <div class="row">
         <!-- Topic 1-->
         <div class="col-md-3">
-          <img class="img-circle" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/iconGame.png" alt="gaming icon" width="140" height="140">
+          <img class="img-circle" src="pictures/iconGame.png" alt="gaming icon" width="140" height="140">
           <h2>Gaming</h2>
           <p>Games like Ping Pong or Minion Race. Have fun....</p>
-          <p><a class="btn btn-default" href="http://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/gaming/index.html" role="button">Try it... &raquo;</a></p>
+          <p><a class="btn btn-default" href="gaming/" role="button">Try it... &raquo;</a></p>
         </div>
         <!-- Topic 2-->
         <div class="col-md-3">
-          <img class="img-circle" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/iconProd.png" alt="productivity icon" width="140" height="140">
+          <img class="img-circle" src="pictures/iconProd.png" alt="productivity icon" width="140" height="140">
           <h2>Tools</h2>
-          <p>Learn more about Bubble Buddy and what your new Buddy can do for you...<p><a class="btn btn-default" href="#" role="button">Try it... &raquo;</a></p>
+          <p>Learn more about Bubble Buddy and what your new Buddy can do for you...</p>
+          <p><a class="btn btn-default" href="tools/" role="button">Try it... &raquo;</a></p>
         </div>
         <!-- Topic 3-->
         <div class="col-md-3">
-          <img class="img-circle" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/iconEntertain.png" alt="entertainment icon" width="140" height="140">
+          <img class="img-circle" src="pictures/iconEntertain.png" alt="entertainment icon" width="140" height="140">
           <h2>Info</h2>
-          <p>As an example use FindLV. FindLV is a navigation and feedback system... </p>
-          <p><a class="btn btn-default" href="#" role="button">Try it... &raquo;</a></p>
+          <p>As an example use FindVL.<br>FindVL is a indoor navigation...</p>
+          <p><a class="btn btn-default" href="info/" role="button">Try it... &raquo;</a></p>
         </div>
         <!-- Topic 4-->
         <div class="col-md-3">
-          <img class="img-circle" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/iconMisc.png" alt="misc icon" width="140" height="140">
-          <h2>Lego Gripper</h2>
-          <p>Control the Lego Mindstorm with a WebSocket-based remote control.</p>
-          <p><a class="btn btn-default" href="http://141.22.27.233:5900/" role="button">Try it...&raquo;</a></p>
+          <img class="img-circle" src="pictures/iconMisc.png" alt="misc icon" width="140" height="140">
+          <h2>New ideas?</h2>
+          <p>Contact Martin.Becke@HAW-Hamburg.de</p>
+          <p><!--a class="btn btn-default" href="http://141.22.27.233:5900/" role="button">Try it...&raquo;</a--></p>
         </div>
       </div><!-- /.row -->
 
@@ -159,10 +174,10 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right">
-          <img  class="img-responsive" alt="HAW Logo" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/logohaw.gif">
+          <img  class="img-responsive" alt="HAW Logo" src="pictures/logohaw.gif">
         </p>
         <p>
-          <img  class="img-responsive" alt="CaDS Logo" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/logoCaDSsmall.jpg">
+          <img  class="img-responsive" alt="CaDS Logo" src="pictures/logoCaDSsmall.jpg">
         </p>
       </footer>
 
@@ -170,10 +185,10 @@
 
 <!-- Bootstrap-JavaScript ==================================== -->
     <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//getbootstrap.com/dist/js/bootstrap.min.js"></script>
 
     <!-- IE10-Anzeigefenster-Hack für Fehler auf Surface und Desktop-Windows-8 -->
-    <script src="https://rawgit.com/twbs/bootstrap/master/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="//rawgit.com/twbs/bootstrap/master/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
