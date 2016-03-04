@@ -15,15 +15,30 @@
     <!-- Bootstrap-CSS -->
     <link rel="stylesheet" href="//getbootstrap.com/dist/css/bootstrap.min.css"/>
 
-    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="../main.css">
   </head>
 
   <body>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#timer_custom_timeout').backward_timer({
+          seconds: 30
+        })
+        $('#timer_default').backward_timer('start')
+      })
+
+      $('#timer_on_exhausted').backward_timer({
+        on_exhausted: function(timer) {
+        window.history.back()
+        }
+      })
+    </script>
+    <span id='timer_default' class='timer'>value placeholder</span>
 <!-- HEADER ================================================== -->
     <div class="page-header">
-      <img class="img-responsive" alt="Logo" src="../../pictures/logoCaDSsmall.jpg">
-      <h1>Modern Browser Communication</h1>
-      <h2>"App 1"</h2>
+          <h1>Modern Browser Communication</h1>
+      <img class="img-responsive" alt="Logo" src="../pictures/logoCaDSsmall.jpg">
+      <h2>Tools</h2>
     </div>
 
 <!-- NAVBAR ================================================== -->
@@ -44,8 +59,8 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li class="active"><a href="/gaming/">Gaming</a></li>
-                <li><a href="/tools/">Tools</a></li>
+                <li><a href="/gaming/">Gaming</a></li>
+                <li class="active"><a href="/tools/">Tools</a></li>
                 <li><a href="/info/">Info</a></li>
                 <li><a href="http://141.22.27.233:5900/">Lego Mindstorm</a></li>
               </ul>
@@ -56,45 +71,21 @@
       </div>
     </nav>
 
-<!-- APP ===================================================== -->
-    <div class="container app">
-      <!-- Application -->
+<!-- CATEGORY ================================================ -->
+    <div class="container category">
       <div class="row">
-        <div class="col-md-12" style="background-color:gray;">
-          <!-- nur fuer Demozwecke
-               hier soll die eigentliche Anwendung hin -->
-          <img src="../../pictures/giphy.gif" alt="Demo">
+        <!-- Topic 1-->
+        <div class="col-md-4">
+          <img class="img-rounded" src="../pictures/iconProd.png" alt="tools icon" width="140" height="140">
+          <h3>Bubble Buddy</h3>
+          <p>Bubble Buddy ♥</p>
+          <p><a class="btn btn-default" href="app1/index.html" role="button">Start bubbling! &raquo;</a></p>
         </div>
-      </div>
-      <!-- Link and Info -->
-      <div class="row">
-        <div class="col-md-6">
-          <a href="../index.html" class="btn btn-link" role="button">&laquo; back to Gaming</a>
-        </div>
-        <div class="col-md-6">
-          <p class="pull-right">
-            <!-- Trigger the modal with a button -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Info</button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" role="dialog">
-              <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Header</h4>
-                  </div>
-                  <div class="modal-body">
-                    <p>Description ...</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
-                  </div>
-                </div>
-              </div>
-            </div><!-- modal -->
-          </p>
+        <!-- Topic 3-->
+        <div class="col-md-4">
+          <img class="img-rounded" src="../pictures/iconProd.png" alt="tools icon" width="140" height="140">
+          <h3>Your Tool?!?</h3>
+          <p>Get involved....WP WS2016. Contact Martin.Becke@haw-hamburg.de for further information.</p>
         </div>
       </div><!-- /.row -->
 
@@ -103,15 +94,14 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right">
-          <img  class="img-responsive" alt="HAW Logo" src="../../pictures/logohaw.gif">
+          <img  class="img-responsive" alt="HAW Logo" src="../pictures/logohaw.gif">
         </p>
         <p>
-          <img  class="img-responsive" alt="CaDS Logo" src="../../pictures/logoCaDSsmall.jpg">
+          <img  class="img-responsive" alt="CaDS Logo" src="../pictures/logoCaDSsmall.jpg">
         </p>
       </footer>
 
     </div><!-- /.container -->
-
 <!-- Bootstrap-JavaScript ==================================== -->
     <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
