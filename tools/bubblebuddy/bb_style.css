@@ -1,0 +1,28 @@
+img.bb_logo {
+    float: left;
+}
+
+.intro_img {
+    margin: 10px auto;
+}
+
+video, .qr_code {
+    float: right;
+    margin-left: 10px;
+}
+
+/* ----- media queries ----- */
+
+.border_description {
+    border-bottom: 1px solid #b1b1b1;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom:20px;
+}
+
+@media (max-width: 1199px) {
+    video {
+        float: none;
+        margin: 0;
+    }
+}
